@@ -4,6 +4,7 @@ namespace AppBundle\Entity;
 
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection as ArrayCollection;
 
 /**
  * Customer
@@ -22,9 +23,14 @@ class Customer extends BaseUser
      */
     protected $id;
 
-    
+    /**
+     * @ORM\OneToMany(targetEntity="Orders", mappedBy="customer")
+     */
+    private $features;
 
-
+    public function __construct() {
+        $this->features = new ArrayCollection();
+    }
 
     /**
      * Get id
