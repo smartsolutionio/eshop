@@ -22,10 +22,7 @@ class Customer extends BaseUser
      */
     protected $id;
 
-    /**
-     * @ORM\OneToMany(targetEntity="Category", mappedBy="product")
-     */
-    private $categories;
+    
 
 
 
