@@ -25,7 +25,7 @@ class Customer extends BaseUser
     /**
      * @ORM\OneToMany(targetEntity="Category", mappedBy="product")
      */
-    private $categoriess;
+    private $categories;
 
 
 
