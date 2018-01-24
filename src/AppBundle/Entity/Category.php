@@ -97,5 +97,25 @@ class Category
     {
         return $this->description;
     }
+
+    /**
+     * Get the value of product
+     */
+    public function getProduct()
+    {
+        return $this->product;
+    }
+
+    /**
+     * Set the value of product
+     *
+     * @return  self
+     */
+    public function setProduct($product)
+    {
+        $this->product = $product;
+
+        return $this;
+    }
 }
 

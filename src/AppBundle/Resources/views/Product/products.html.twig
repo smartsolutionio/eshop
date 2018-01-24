@@ -1,0 +1,38 @@
+{% block title %}
+
+    <h1>Seznam produktu</h1>
+
+{% endblock %}
+
+{% block body %}
+
+    {% if products %}
+
+        {% for product in products %}
+
+        <ul>
+
+            <li>Name:{{ product.name }}</li>
+            <li>Price:{{ product.price }}</li>
+            <li>Description:{{ product.description }}</li>
+            <li>Availibility:{{ product.availibility }}</li>
+            <li>Validity of delivery:{{ product.validity_delivery }}</li>
+            <li>Categories:</li>
+            <ul>
+                {% for category in categories %}
+
+                    <li>Name:{{ category.name }}</li>
+                    <li>Description:{{ category.description }}</li>
+
+                {% endfor %}
+            </ul>
+
+        {% endfor %}
+
+    {% else %}
+
+        Nenalezen zadny produkt.
+
+    {% endif %}
+
+{% endblock %}

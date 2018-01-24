@@ -77,23 +77,9 @@ class Product
     }
 
     /**
-     * Set name
+     * Get the value of name
      *
-     * @param string $name
-     *
-     * @return Product
-     */
-    public function setName($name)
-    {
-        $this->name = $name;
-
-        return $this;
-    }
-
-    /**
-     * Get name
-     *
-     * @return string
+     * @return  string
      */
     public function getName()
     {
@@ -101,27 +87,152 @@ class Product
     }
 
     /**
-     * Set cena
+     * Set the value of name
      *
-     * @param string $cena
+     * @param  string  $name
      *
-     * @return Product
+     * @return  self
      */
-    public function setCena($cena)
+    public function setName(string $name)
     {
-        $this->cena = $cena;
+        $this->name = $name;
 
         return $this;
     }
 
     /**
-     * Get cena
+     * Get the value of price
      *
-     * @return string
+     * @return  string
      */
-    public function getCena()
+    public function getPrice()
     {
-        return $this->cena;
+        return $this->price;
+    }
+
+    /**
+     * Set the value of price
+     *
+     * @param  string  $price
+     *
+     * @return  self
+     */
+    public function setPrice(string $price)
+    {
+        $this->price = $price;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of description
+     *
+     * @return  string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * Set the value of description
+     *
+     * @param  string  $description
+     *
+     * @return  self
+     */
+    public function setDescription(string $description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of availibility
+     *
+     * @return  string
+     */
+    public function getAvailibility()
+    {
+        return $this->availibility;
+    }
+
+    /**
+     * Set the value of availibility
+     *
+     * @param  string  $availibility
+     *
+     * @return  self
+     */
+    public function setAvailibility(string $availibility)
+    {
+        $this->availibility = $availibility;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of validityDelivery
+     *
+     * @return  string
+     */
+    public function getValidityDelivery()
+    {
+        return $this->validity_delivery;
+    }
+
+    /**
+     * Set the value of validityDelivery
+     *
+     * @param  string  $validityDelivery
+     *
+     * @return  self
+     */
+    public function setValidityDelivery(string $validity_delivery)
+    {
+        $this->validity_delivery = $validity_delivery;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of categories
+     */
+    public function getCategory()
+    {
+        return $this->categories;
+    }
+
+    /**
+     * Set the value of categories
+     *
+     * @return  self
+     */
+    public function setCategory($categories)
+    {
+        $this->categories = $categories;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of farmers
+     */
+    public function getFarmers()
+    {
+        return $this->farmers;
+    }
+
+    /**
+     * Set the value of farmers
+     *
+     * @return  self
+     */
+    public function setFarmers($farmers)
+    {
+        $this->farmers = $farmers;
+
+        return $this;
     }
 }
-
